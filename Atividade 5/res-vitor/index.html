@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitra</title>
+</head>
+<body>
+  <img src="./img/Layout_Mitra_02.png" alt="Mitra" width="" height="">
+  <nav>
+    <ul>
+      <li>
+        <a href="#Home">Home</a>
+      </li>
+      <li>
+        <a href="#Products">Produtos</a>
+      </li>
+      <li>
+        <a href="#Solar energy">Energia Solar</a>
+      </li>
+      <li>
+        <a href="Order">Pedido</a>
+      </li>
+      <li>
+        <a href="#Gallery">Galearia</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h1 id="Home"><strong>Mitra - Tecnologia Solar</strong></h1>
+  <img src="./img/Layout_Mitra_06.png" alt="Mitra" width="" height="">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nesciunt dignissimos! 
+    Inventore dignissimos, expedita debitis perspiciatis obcaecati eius quasi ullam iure modi nisi 
+    nostrum numquam vitae et fuga molestias esse!
+  </p>
+  <block:more><a href="permalink">Ler mais...</a></block:more>
+
+  <!-- Fim da Tecnologia Solar/Começo de Produtos-->
+
+  <h1 id="Products"><strong>Produtos</strong></h1>
+
+  <div class="box">
+    <span id="Poste"><strong>Poste solar autônomo</strong></span>
+    <img src="./img/Layout_Mitra_14.jpg" alt="Mitra" width="" height="" id="Poste" >
+  </div>
+
+  <div class="box">
+    <span id="Bomb"><strong>Bomba de água solar</strong></span>
+    <img src="./img/Layout_Mitra_16.jpg" alt="Mitra" width="" height="" id="Bomb">
+  </div>
+  <br>
+
+  <div class="box">
+    <legend><strong>Poste solar autônomo</strong></legend>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem magni tenetur
+      suscipit praesentium molestias distinctio, quo consectetur eius animi, asperiores atque 
+      repellendus quae? Et possimus necessitatibus dolore nihil beatae a.
+    </p>
+    <block:more><a href="permalink">Comprar</a></block:more>
+  </div>
+
+  <div class="box">
+    <legend><strong>Bomba solar de agua</strong></legend>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi impedit repellat 
+      inventore nihil, assumenda provident fugiat alias eveniet molestiae beatae, tempora 
+      quibusdam nam nisi temporibus soluta sunt saepe. Ullam, dignissimos?
+    </p>
+    <block:more><a href="permalink">Comprar</a></block:more>
+  </div>
+
+    <!-- Não sei o que significa a parte de baixo -->
+
+  <style>
+    div.box {width:300px;display: inline-block;}
+  </style>
+
+  <h1 id="Solar energy"><strong>Energia Solar</strong></h1>
+  <div class="box">
+    <video width="320" height="240" controls="controls">
+      <source src="./video/video.ogv" type="video/mp4">
+      <object data="" width="320" height="240">
+      <embed width="320" height="240" src="./video/video.ov">
+    </object>
+  </div>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur accusantium nostrum amet.
+    Unde voluptate veniam cumque laboriosam quidem quae nemo ullam? Consequuntur fuga 
+    recusandae iste ut assumenda quibusdam laudantium explicabo.
+
+  <br />
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veniam ipsam, nisi iusto minus 
+    suscipit voluptatem sapiente mollitia iure, voluptatum vel laudantium provident aliquid. 
+    Soluta quidem aliquid repudiandae ipsam odit. Lorem, ipsum dolor sit amet consectetur adipisicing 
+    lit. Nam distinctio reprehenderit sint consectetur eum? Placeat rerum deserunt quo? Distinctio 
+    exercitationem nostrum aut, ullam quisquam obcaecati amet voluptas. Exercitationem, consequuntur 
+    consequatur!
+  </p>
+
+
+  <form action="#" method="POST">
+    <fieldset>
+      <legend id="Order"><strong>Faça seu pedidos</strong></legend>
+      <p>
+        Você pode pedir um determinado produto ou serviço preenchendo o formulário abaixo:
+      </p>
+      <label for="Name">Name(requerido):</label>
+        <input type="text" name="Name" id="Name" value="">
+      <br />
+      <Label for="Last Name">Sobrenome(requerido):</Label>
+        <input type="text" name="Last Name" id="Last Name" value="">
+      <br />
+      <label for="Address">Endereço</label>
+        <input type="text" name="Address" id="Address" value="">
+      <br />
+      <label for="Number">Número</label>
+        <input type="text" name="Number" id="Number" value="">
+      <br />
+      <label for="Email">Email(requerido)</label>
+        <input type="text" name="Email" id="Email" value="">
+      <br />
+      <label for="City">Cidade</label>
+        <input type="text" name="City" id="City" value="">
+      <br />
+      <label for="CPF">CPF(requerido)</label>
+        <input type="text" name="CPF" id="CPF" value="" placeholder="ex:999.999.999-99">
+      <br />
+      <label for="CEP">CEP</label>
+        <input type="text" name="CEP" id="CEP" value="" placeholder="XXXXX-XXX" pattern="[0-9]{5}-{0-9}{3}">
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Deseja receber notícias sobre energia</strong></legend>
+      <input type="radio" name="Sim" id="Sim">
+        <label for="Sim">Sim</label>
+      <br />
+      <input type="radio" name="Não" id="Não">
+        <label for="Não">Não</label>
+    </fieldset>
+
+  <button type="submit">Enviar</button>
+
+
+  </form>
+  <h1 id="Galley">Galearia</h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="./img/galery/large/casa.jpg" >
+        <img src="./img/galery/small/casa.jpg" alt="Casa" id="Casa">
+        </a>
+        <br />
+        <label for="Casa">Exemplo de instalação de painéis em uma casa</label>
+      </li>
+      <li>
+        <a href="./img/galery/large/fazenda.jpg">
+        <img src="./img/galery/small/fazenda.jpg" alt="Fazenda" id="fazenda">
+        </a>
+        <br />
+        <label for="">Exemplo de instalação de painéis em uma casa</label>
+      </li>
+      <li>
+        <a href="#Home">Home</a>
+      </li>
+      <li>
+        <a href="#Products">Produtos</a>
+      </li>
+      <li>
+        <a href="#Solar energy">Energia Solar</a>
+      </li>
+      <li>
+        <a href="Order">Pedido</a>
+      </li>
+      <li>
+        <a href="#Gallery">Galearia</a>
+      </li>
+    </ul>
+  </nav>
+
+  <p>
+    todos os direitos reservados - Mitra
+  </p>
+
+  <nav>
+    <ul>
+      <li>
+        <img src="./img/Layout_Mitra_42.png" alt="Facebook">
+      </li>
+      <li>
+        <img src="./img/Layout_Mitra_45.png" alt="Twiter">
+      </li>
+      <li>
+        <img src="./img/Layout_Mitra_47.png" alt="V">
+      </li>
+    </ul>
+  </nav>
+</body>  
+</html>

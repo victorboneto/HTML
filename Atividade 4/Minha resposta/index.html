@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício de Montagem de Formulário</title>
+</head>
+<body>
+  <form action="#" method="POST">
+    <fieldset>
+      <legend><strong>Dados Pessoais</strong></legend>
+      <label for="Name">Nome</label>
+        <input type="text" name="Name" id="Name" value="">
+      <br />
+      <label for="Address">Endereço</label>
+        <input type="text" name="Address" id="Address" value="">
+      <br/>
+      <label for="Email">Email</label>
+        <input type="text" name="Email" id="Email" value="">
+      <br />
+      <label for="School">Escolaridade</label>
+        <select name="School" id="School">
+          <option value="" selected disabled hidden>Nível Básico</option>
+          <option value="NS">Nível superior</option>
+        </select>
+      <br />
+      <label for="Email">Email</label>
+        <textarea name="Email" id="Email" cols="30" rows="2"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Natureza do Cargo</strong></legend>
+      <input type="radio" name="NZ" id="NZ" value="">
+      <label for="NZ">Gerência</label>
+      <input type="radio" name="NZ" id="NZ.1" value="">
+      <label for="NZ.1">Financeiro</label>
+      <input type="radio" name="NZ" id="NZ.2" value="">
+      <label for="NZ.2">Recepção</label>
+      <input type="radio" name="NZ" id="NZ.3" value="">
+      <label for="NZ.3">Administrativo</label>
+      <input type="radio" name="NZ" id="NZ.4" value="">
+      <label for="NZ.4">Jurídico</label>
+      <input type="radio" name="NZ" id="NZ.5" value="">
+      <label for="NZ.5">Outros</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="AI"><strong>Áreas de Interesse</strong></label>
+      <input type="checkbox" name="AI" id="Computação">
+      <label for="Computação">Computação</label>
+      <input type="checkbox" name="AI" id="Biologia" value="">
+      <label for="Biologia">Biologia</label> 
+      <input type="checkbox" name="AI" id="Comunicação" value="">
+      <label for="Comunicação">Comunicação</label>
+      <input type="checkbox" name="AI" id="Meio Ambiente" value="">
+      <label for="Meio Ambiente">Meio Ambiente</label>
+      <input type="checkbox" name="AI" id="Engenharia" value="">
+      <label for="Engenharia">Engenharia</label>
+      <input type="checkbox" name="AI" id="Historia" value="">
+      <label for="Historia">Historia</label>
+      <input type="checkbox" name="AI" id="Psicologia" value="">
+      <label for="Psicologia">Psicologia</label>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
