@@ -4,196 +4,224 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Formuláiro</title>
+  <title>Formulário</title>
 </head>
 <body>
   <header>
-    <div class="Informação pessoal">
+    <div class="informaçãoPessoal">
       <h1>Formulário Atividade</h1>
 
       <!-- Informação pessoal -->
 
-      <fieldset>
-        <legend>
-            personal information
-        </legend>
-        <br>
-          Name:
-              <input type="text" name="Nome" placeholder="Insira seu nome aqui">
-        <br>
-          Sobrenome:
-              <input type="text" name="Sobrenome" placeholder="Insira seu sobrenome aqui">
-        <br>
-          Endereço:
-              <input type="text" name="Endereço" placeholder="Insira seu endereço aqui">
-        <br>
-          Cidade:
-              <input type="text" name="Cidade" placeholder="Insira sua Cidade aqui">
+      <form>
+        <fieldset>
+          <legend>
+            <strong>Personal Information</strong>
+          </legend>
+          </br>
+            <label for="name">Nome:</label>
+            <input type="text" name="Name" placeholder="Insira seu nome aqui">
+          </br>
+            <label for="surname">Sobrenome:</label>
+            <input type="text" name="surname" placeholder="Insira seu sobrenome aqui">
+          </br>
+            <label for="address">Endereço:</label>
+            <input type="text" name="address" placeholder="Insira seu endereço aqui">
+          </br>
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" placeholder="Insira sua Cidade aqui">
+          </br>
+            <label for="state">Estado</label>
+            <input list="browsers" name="state" placeholder="Estado/Província">
+            <datalist id="browsers">
+              <Option value="Brasilia"></Option>
+              <option value="Santa Catarina"></option>
+              <option value="Parana"></option>
+            </datalist>
+          </br>
+            <label for="CodPostal">CEP</label>
+            <input type="CodPostal" name="CodePostal" placeholder="XXXXX-XXX">
         </br>
-        <label for="Estado">Estado</label>
-          <input list="browsers" name="browsers" placeholder="Estado/Província">
-          <datalist id="browsers">
-            <Option value="Brasilia"></Option>
-            <option value="Santa Catarina"></option>
-            <option value="Parana"></option>
-          </datalist>
-        </br>
-        <label for="Cod portal">CEP</label>
-          <input type="Cod postal" name="Code postal" placeholder="XXXXX-XXX">
-        </br>
-        <label for="País">País</label>
-          <input list="browsers" name="browsers" placeholder="País">
-          <datalist id="browsers">
-            <option value="Estados Unidos"></option>
-            <option value="Brasil"></option>
-            <option value="Canáda"></option>
-          </datalist>
-      </fieldset>
+            <label for="Pais">País</label>
+            <input list="browsers" name="Pais" placeholder="País">
+            <datalist id="browsers">
+              <option value="Estados Unidos"></option>
+              <option value="Brasil"></option>
+              <option value="Canáda"></option>
+            </datalist>
+        </fieldset>
+      </form>
     </div>
+  </br>
+  </header>
 
 
   <!-- Fim da Informação Pessoal -->
   <!-- Começo informação de contato -->
 
 
-  </header>
-    </br>
-    <fieldset>
-      <legend>
-        contact information
-      </legend>
-
-      <!-- Como entrar em contato -->
-
+  <div class="contactInformation">
+    <form>
       <fieldset>
         <legend>
-          how to contact you?
+          <strong>Contact Information</strong>
         </legend>
-        <input type="radio" name="contact" value="Phone">
-          <label for="Email">Phone</label>
-        <input type="radio" name="contact" value="email">
-          <label for="Email">Email</label>
-        <input type="radio" name="Contact" value="other">
-          <label for="other">Outro</label>
-        <input type="text" placeholder="Outro">
+
+          <!-- Como entrar em contato -->
+
+          <div class="contact">
+            <fieldset>
+              <legend>
+                How to contact you?
+              </legend>
+                <input type="radio" name="contact" id="selectPhone" value="phone">
+                  <label for="selectPhone">Phone</label>
+                <input type="radio" name="contact" id="selectEmail" value="email" >
+                  <label for="selectEmail">Email</label>
+                <input type="radio" name="Contact" id="selectOther" value="other">
+                  <label for="selectOther">Outro</label>
+                  <input type="text" placeholder="Outro">
+            </fieldset>
+          </div>
+          </br>
+
+
+              <!-- Fim de Como entrar em contato -->
+              <!-- Continuação de informação de contato -->
+
+
+          <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="xxxxxxxxxxx@gmail.com">    
+            <p>    
+              We will never sell or disclose your email address toy anyone. Once you account is setup, you may add
+              additional email address.
+            </p>
+            <label for="re-email">Re-enter email:</label>
+              <input type="email" id="re-email" name="email" placeholder="xxxxxxxxxxx@gmail.com">
+            <p>
+              Must match the email address you just entered above.
+            </p>
+          <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="+99 (99) 99999-9999">
+          </br>
+          <label for="fax">Fax:</label>
+            <input type="Fax" name="fax" id="fax" placeholder="+99 99-9999-9999">
+          <br></br>
+
+              <!-- Assunto da Mensagem -->
+
+          <div class="message">
+            <fieldset> 
+              <legend>
+                Message Subject
+              </legend>
+                <input type="radio" name="Ajuda" id="help1">
+                  <label for="help1">
+                    Help, my brother/sister is diving me crazy!
+                  </label>
+                </br>
+                <input type="radio" name="Ajuda" id="help2">
+                  <label for="help2">
+                    How can I tell my father/mother, It's time for them to retire? 
+                  </label>
+                </br>
+                <input type="radio" name="Ajuda" id="help3">
+                  <label for="help3">
+                    I'm exasperated with an awkward partner! 
+                  </label>
+                </br>
+                <input type="radio" name="Ajuda" id="help4">
+                  <label for="help4">
+                    How do I stop my family members from intefereing?
+                  </label>
+                </br>
+                <input type="radio" name="Ajuda" id="help5">
+                  <label for="help5">
+                    Other
+                  </label>
+                  <input type="text">
+            </fieldset>
+          </div>
+              
+            <!-- Continuação de Informação de contato  -->
+
+          <br>
+
+          <label for="your messsage">Your massage</label>
+            <textarea name="Message" cols="30" rows="2"></textarea>
+          <label for="image">Image</label>
+            <input type="file"name="Image">
+
+          <div class="time">
+            <h3>What is your current availability?</h3>
+
+            <input type="radio" name="time" id="time1">
+              <label for="time1">Party-time</label>
+            <br>
+            <input type="radio" name="time" id="time2">
+              <label for="time2">Full-time(days)</label>
+            <br>
+            <input type="radio" name="time" id="time3">
+              <label for="time3">Full-time(swing)</label>
+            <br>
+            <input type="radio" name="time" id="time4">
+              <label for="time4">Full-time(Graveyard)</label>
+            <br>
+            <input type="radio" name="time" id="time5">
+              <label for="time5">Weekends Only</label>
+          </div>
       </fieldset>
-
-
-          <!-- Fim de Como entrar em contato -->
-          <!-- Continuação de informação de contato -->
-
-
-      <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="xxxxxxxxxxx@gmail.com">    
-        <p>    
-          We will never sell or disclose your email address toy anyone. Once you account is setup, you may add
-          additional email address.
-        </p>
-      <label for="email">Re-enter email:</label>
-        <input type="email" id="email" name="email" placeholder="xxxxxxxxxxx@gmail.com">
-        <p>
-          Must match the email address you just entered above.
-        </p>
-      <label for="Phone">Phone</label>
-        <input type="tel" name="Phone" id="Phone" placeholder="+99 (99) 99999-9999">
-      <br>
-      <label for="Fax">Fax</label>
-        <input type="Fax" name="Fax" id="Fax" placeholder="+99 99-9999-9999">
-      <br></br>
-
-          <!-- Assunto da Mensagem -->
-
-      <fieldset> 
-        <legend>
-          Message subject
-        </legend>
-        <input type="radio" name="Ajuda">
-          <label>
-            Help, my brother/sister is diving me crazy!
-          </label>
-        <br>
-        <input type="radio" name="Ajuda">
-          <label>
-            How can I tell my father/mother, It's time for them to retire? 
-          </label>
-        <br>
-        <input type="radio" name="Ajuda">
-          <label>
-            I'm exasperated with an awkward partner! 
-          </label>
-        <br>
-        <input type="radio" name="Ajuda">
-          <label>
-            How do I stop my family members from intefereing?
-          </label>
-        <br>
-        <input type="radio" name="Ajuda">
-          <label>
-            Other
-          </label>
-        <input type="text">
-      </fieldset>
-          
-        <!-- Continuação de Informação de contato  -->
-
-      <br>
-      <label for="your messsage">Your massage</label>
-        <textarea name="Message" cols="30" rows="2"></textarea>
-      <label for="image">Image</label>
-        <input type="file"name="Image">
-      <h3>
-        What is your current availability?
-      </h3>
-      <input type="radio" name="time" id="Time">
-        <label for="time">Party-time</label>
-      <br>
-      <input type="radio" name="time" id="Time">
-        <label for="time">Full-time(days)</label>
-      <br>
-      <input type="radio" name="time" id="Time">
-        <label for="time">Full-time(swing)</label>
-      <br>
-      <input type="radio" name="time" id="Time">
-        <label for="time">Full-time(Graveyard)</label>
-      <br>
-      <input type="radio" name="time" id="Time">
-        <label for="time">Weekends Only</label>
-    </fieldset>
-    <br>
+    </form>
+  </div>
+  <br>
 
     <!-- Fim de Informação de contato -->
 
     <!-- Começo da Informação de Login -->
 
-    <fieldset>
-      <legend>
-        Login Information
-      </legend>
-      <label for="username">usuario</label>
-      <input type="text" id="username" name="username">
-      <p>
-        May only contain letter, numbers , and underscore(_) and 8-20 character long.
-      </p>
-      <label for="pwd">Senha</label>
-        <input type="password" id="pwd" name="pwd">
-      <input type="submit" value="Enviar">
-      <p>
-        Must be 8-25 characters long.
-      </p>
-      <label for="pwd">Please re-enter your password:</label>
-        <input type="password" id="pwd" name="pwd">
-      <p>
-        Must match the password you entered just above
-      </p>
-      <input type="checkbox" id="rmb" name="remember me">
-        <label for="remember me">remember me</label>
-      <p>
-        If you don't want to bother with having to login every time you visit the site, then chicking "Remember
-        Me" will place a aunique identifier only our site can read that we'll use to identify you and log you in
-        automatically each time you visit
-      </p>
-    </fieldset>
-  <input type="submit" value="Enviar" >
+  <div class="login">
+    <form>
+      <fieldset>
+        <legend>
+          <strong>Login Information</strong>
+        </legend>
+
+          <label for="username">Úsuario:</label>
+            <input type="text" id="username" name="username">
+
+          <p>
+            May only contain letter, numbers , and underscore(_) and 8-20 character long.
+          </p>
+
+          <label for="pwd">Senha:</label>
+            <input type="password" id="pwd" name="pwd">
+            <input type="submit" value="Enviar">
+
+          <p>
+            Must be 8-25 characters long.
+          </p>
+
+          <label for="pwd">Please re-enter your password:</label>
+            <input type="password" id="pwd" name="pwd">
+
+          <p>
+            Must match the password you entered just above.
+          </p>
+
+          <input type="checkbox" id="rmb" name="rememberMe">
+            <label for="rmb">remember me</label>
+
+          <p>
+            If you don't want to bother with having to login every time you visit the site, then chicking "Remember
+            Me" will place a aunique identifier only our site can read that we'll use to identify you and log you in
+            automatically each time you visit
+          </p>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <input type="submit" value="Enviar">
 
   <!-- Fim da Informação de Login -->
 
